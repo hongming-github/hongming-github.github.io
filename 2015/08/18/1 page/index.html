@@ -24,7 +24,7 @@
 <meta property="og:image" content="http://7xl65d.com1.z0.glb.clouddn.com/city3.jpg "city"">
 <meta property="og:image" content="http://7xl65d.com1.z0.glb.clouddn.com/city4.jpg "city"">
 <meta property="og:image" content="http://7xl65d.com1.z0.glb.clouddn.com/city5.jpg "city"">
-<meta property="og:updated_time" content="2015-08-18T08:33:31.000Z">
+<meta property="og:updated_time" content="2015-08-18T15:18:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac下如何用hexo搭建自己的博客">
 <meta name="twitter:description" content="一、安装Node.js和Git非常简单，请自行百度 or Google。  
@@ -240,7 +240,7 @@
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" content="Tue Aug 18 2015 16:33:31 GMT+0800">
+    <time itemprop="datePublished" content="Tue Aug 18 2015 23:18:51 GMT+0800">
 	
 		    8月 18, 2015
     	
@@ -263,7 +263,7 @@
 <h4 id="三、创建博客">三、创建博客</h4><p>通过以下四条命令可以完成博客的创建<br>1.hexo init blog<br>2.cd blog<br>3.npm install<br>（<strong>注意：在这个步骤的时候可能出现以下错误<br>{ [Error: Cannot find module ‘./build/Release/DTraceProviderBindings’] code: ‘MODULE_NOT_FOUND’ }<br>{ [Error: Cannot find module ‘./build/default/DTraceProviderBindings’] code: ‘MODULE_NOT_FOUND’ }<br>{ [Error: Cannot find module ‘./build/Debug/DTraceProviderBindings’] code: ‘MODULE_NOT_FOUND’ }</strong>）<br>此时，我们只需要输入npm install hexo –no-optional就可以了<br>4.hexo server<br>此时，我们就可以通过在浏览器中输入localhost:4000来访问自己的博客了。  </p>
 <h4 id="四、选择一个主题">四、选择一个主题</h4><p>创建好博客后，会有一个默认主题供我们使用。如果想要换成其他的，可以在网上搜索，然后通过主题作者的说明文档来学习如何使用和配置。</p>
 <h4 id="五、使用GitHub_Pages建立博客">五、使用GitHub Pages建立博客</h4><p>在github上建立仓库，仓库的名字一定是username.github.io。  </p>
-<h4 id="六、部署到github（把个人博客和github连在一起）">六、部署到github（把个人博客和github连在一起）</h4><p>首先，在Hexo 3.0版本后deploy git 被分开的，所以需要安装，输入<br>npm install hexo-deployer-git –save命令<br>然后，到配置_config.yml文件中找到<br>deploy:<br>  type:<br>然后修改为:<br>  deploy:<br>  type: git<br>  repo: git@github.com:username/username.github.io.git<br>  branch: master</p>
+<h4 id="六、部署到github（把个人博客和github连在一起）">六、部署到github（把个人博客和github连在一起）</h4><p>首先，在Hexo 3.0版本后deploy git 被分开的，所以需要安装，输入<br>npm install hexo-deployer-git –save<br>命令  然后，到配置_config.yml文件中找到<br>deploy:<br>  type:<br>然后修改为:<br>  deploy:<br>  type: git<br>  repo: git@github.com:username/username.github.io.git<br>  branch: master</p>
 <p><strong>注意：<br>1.每个冒号后面都有一个空格！<br>2.repo必须是SSH形式的url，是仓库的路径，可以在github上获取</strong><br>然后输入以下命令进行部署：<br>hexo clean<br>hexo generate（可以简写为hexo g）<br>hexo deploy（可以简写为hexo d）<br>成功后，如果能成功访问username.github.io到你的博客，那说明你已经配置完成了！   </p>
 <h3 id="写在最后：">写在最后：</h3><p>技术更新太快，要时刻关注官方网站的技术文档，语法，命令随时都有可能更新，个人教程很多都已经过期了。  </p>
 <p>要学会翻墙，要学会翻墙，要学会翻墙。(重要的事情要说三遍)</p>
